@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Filter App</title>
+    <style>
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .preview { max-width: 100%; margin: 20px 0; }
+        .filters { margin: 20px 0; }
+        .filter-btn { margin: 5px; padding: 8px 16px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="file" id="imageInput" accept="image/*">
+        <div class="filters">
+            <!-- <button class="filter-btn" data-filter="colorFixer">Color Fixer</button>
+            <button class="filter-btn" data-filter="denoiser">Denoiser</button>
+            <button class="filter-btn" data-filter="oldPhotoRestorer">Old Photo Restorer</button>
+            <button class="filter-btn" data-filter="unblur">Unblur</button>
+            <button class="filter-btn" data-filter="sharpener">Sharpener</button> -->
+            <button class="filter-btn" data-filter="faceEnhancer">Face Enhhancer</button>
+
+        </div>
+        <canvas id="imageCanvas" class="preview"></canvas>
+        <button id="downloadBtn">Download Image</button>
+    </div>
+    <script src="filters.js"></script>
+</body>
+</html>
